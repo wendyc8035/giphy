@@ -10,7 +10,7 @@
       url: img_url,
       method: "GET",
       success: function(response) {
-      var url = response.data[0].images.original.url;
+      var url = response.data.images.original.url;
     $('body').append('<img src=' + url + '>');
     },
     });
